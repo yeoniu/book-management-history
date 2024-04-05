@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> DJPRSHS Book Management System</title>
+  <style>
+  
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.star {
+  width: 5px;
+  height: 5px;
+  background-color: #6495ED;
+  border-radius: 100%;
+  position: absolute;
+}
+    body {
+      background-color: #00000;
+      color: #white;
+      font-family: Times New Roman, Timew New Roman, Timew New Roman;
+    }
+    h1 {
+      text-align: center;
+      text-shadow: 0 0 5px #ADD8E6;
+    }
+    div {
+      text-align: center;
+    }
+    button {
+      background-color: #AFEEEE;
+      color: #000080;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      text-shadow: 0 0 5px #F5FFFA;
+    }
+  </style>
+</head>
+<body>
+<script>
+  // Create a function to generate a random number between min and max
+  function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Create a function to generate a star
+  function createStar() {
+    // Create a new div element
+    var star = document.createElement("div");
+
+    // Set the star's class to "star"
+    star.className = "star";
+
+    // Set the star's position to a random location on the screen
+    star.style.left = random(0, window.innerWidth) + "px";
+    star.style.top = random(0, window.innerHeight) + "px";
+
+    // Add the star to the body of the document
+    document.body.appendChild(star);
+  }
+
+  // Create 100 stars
+  for (var i = 0; i < 100; i++) {
+    createStar();
+  }
+</script>
+</body>
+</html> 
+  <h1>Dr. Jose P. Rizal Senior High School Book Management System</h1>
+  <p>Welcome to book management system. Here you can manage your book inventory, view history, and more.</p>
+  <div>
+    <button><a>Create New Inventory</button>
+    <button>New Lists of Borrowers</button>
+   <button><a href="https://1drv.ms/x/s!AvfwdqddSE94eYfm4zleONqrO_s?e=d1iN5Q.html">Borrowers for the Month of April</a></button>
+    <button>Borrowers for the Month of May</button>
+    <button>Newly Added Book</button>
+    <button>Books for HUMSS</button>
+    <button>Books for CSS</button>
+    <button>Books for EIM</button>
+    <button>Books for CBF</button>
+    <button>Books for TDI</button>
+   
+  </div>
+</body>
+</html>
